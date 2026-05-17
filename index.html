@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<meta name="description" content="Tubus Servicios — Concesionario autorizado Yutong en Carabobo. Mantenimiento, repuestos y asesoría técnica para autobuses Yutong y otras marcas en Venezuela." />
+<meta name="description" content="Tubus Servicios — Concesionario autorizado Yutong con sedes en Carabobo y Guatire. Mantenimiento, repuestos y asesoría técnica para autobuses Yutong y otras marcas en Venezuela." />
 <title>Tubus Servicios · Concesionario Autorizado Yutong — Carabobo, Venezuela</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -933,9 +933,59 @@
   /* ---------- Contact ---------- */
   .contact-grid {
     display: grid;
-    grid-template-columns: 1.2fr 1fr;
-    gap: 40px;
+    grid-template-columns: 1fr 1fr;
+    gap: 32px;
+    align-items: start;
+  }
+  .contact-sedes {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    margin-bottom: 28px;
+  }
+  .sede-card {
+    background: var(--bg-3);
+    border: 1px solid var(--border-strong);
+    border-radius: 16px;
+    padding: 22px 20px;
+  }
+  .sede-card-head {
+    display: flex;
     align-items: center;
+    gap: 10px;
+    margin-bottom: 16px;
+  }
+  .sede-dot {
+    width: 8px; height: 8px;
+    border-radius: 50%;
+    background: var(--primary-light);
+    flex-shrink: 0;
+  }
+  .sede-dot.pending { background: var(--text-dim); }
+  .sede-name {
+    font-size: 0.78rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    color: var(--primary-light);
+  }
+  .sede-name.pending { color: var(--text-dim); }
+  .sede-badge {
+    margin-left: auto;
+    font-size: 0.65rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.06em;
+    padding: 3px 8px;
+    border-radius: 99px;
+    background: var(--primary-soft);
+    color: var(--primary-light);
+    border: 1px solid rgba(77,143,239,0.25);
+  }
+  .sede-badge.pending {
+    background: rgba(107,114,128,0.12);
+    color: var(--text-dim);
+    border-color: var(--border-strong);
   }
   .contact h2 {
     font-size: clamp(1.8rem, 3vw, 2.5rem);
@@ -1100,6 +1150,7 @@
 
     /* Contact */
     .contact-grid { grid-template-columns: 1fr; gap: 32px; }
+    .contact-sedes { grid-template-columns: 1fr; }
     .contact h2 { font-size: 1.9rem; }
 
     /* Banner */
@@ -1304,7 +1355,7 @@
     <div class="hero-left reveal">
       <span class="eyebrow">
         <svg width="11" height="11" viewBox="0 0 24 24" fill="currentColor"><circle cx="12" cy="12" r="4"/></svg>
-        Concesionario Autorizado Yutong · Carabobo
+        Concesionario Autorizado Yutong · Carabobo &amp; Guatire
       </span>
 
       <h1>
@@ -1314,7 +1365,7 @@
       </h1>
 
       <p class="lead">
-        Somos el agente autorizado de Yutong en el estado Carabobo. Repuestos originales, mantenimiento preventivo y correctivo, y asesoría técnica para autobuses Yutong y otras marcas en toda Venezuela.
+        Agente autorizado de Yutong con sedes en Carabobo y Guatire. Repuestos originales, mantenimiento preventivo y correctivo, y asesoría técnica para autobuses Yutong y otras marcas en toda Venezuela.
       </p>
 
       <div class="cta-row">
@@ -1341,7 +1392,7 @@
         <div class="hero-trust-sep"></div>
         <div class="hero-trust-item">
           <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
-          Atención en toda Venezuela
+          2 sedes: Carabobo y Guatire
         </div>
       </div>
     </div>
@@ -1374,10 +1425,10 @@
         </div>
         <div class="kpi-card k-teal">
           <div class="kpi-icon">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="1" y="3" width="15" height="13" rx="2"/><path d="M16 8h4l3 3v5h-7V8z"/><circle cx="5.5" cy="18.5" r="2.5"/><circle cx="18.5" cy="18.5" r="2.5"/></svg>
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
           </div>
-          <div class="kpi-val"><span data-count="6">0</span><sup> marcas</sup></div>
-          <div class="kpi-label">Marcas atendidas</div>
+          <div class="kpi-val"><span data-count="2">0</span><sup> sedes</sup></div>
+          <div class="kpi-label">Carabobo · Guatire</div>
         </div>
       </div>
 
@@ -1387,7 +1438,7 @@
           <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
         </div>
         <div class="status-text">
-          <div class="st">Agente Oficial Yutong — Carabobo</div>
+          <div class="st">Agente Oficial Yutong — Carabobo · Guatire</div>
           <div class="sl">Repuestos originales certificados directamente del fabricante</div>
         </div>
       </div>
@@ -1526,8 +1577,8 @@
         <div class="icon">
           <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
         </div>
-        <h3>Cobertura Regional</h3>
-        <p>Base en Valencia, Carabobo, con atención a clientes en toda Venezuela.</p>
+        <h3>Dos Sedes</h3>
+        <p>Sedes en Carabobo y Guatire para atender a clientes en toda Venezuela con mayor cercanía.</p>
       </div>
     </div>
   </div>
@@ -1536,18 +1587,25 @@
 <!-- ========== CONTACT ========== -->
 <section id="contacto" class="contact">
   <div class="container">
-    <div class="contact-grid">
-      <div class="reveal">
-        <span class="chip">Contáctanos</span>
-        <h2>¿Listo para darle mantenimiento a tu flota?</h2>
-        <p class="lead">
-          Estamos aquí para ayudarte. Contáctanos por WhatsApp, correo o visítanos en nuestro taller autorizado en Carabobo.
-        </p>
+    <div class="section-head" style="margin-bottom:40px;">
+      <span class="chip">Contáctanos</span>
+      <h2>¿Listo para darle mantenimiento a tu flota?</h2>
+      <p>Dos sedes para atenderte. Contáctanos por WhatsApp, correo o visítanos en el taller más cercano.</p>
+    </div>
 
+    <div class="contact-sedes reveal">
+
+      <!-- Sede Carabobo -->
+      <div class="sede-card">
+        <div class="sede-card-head">
+          <div class="sede-dot"></div>
+          <span class="sede-name">Sede Carabobo</span>
+          <span class="sede-badge">Principal</span>
+        </div>
         <ul class="contact-list">
           <li>
             <div class="ic">
-              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.13.96.37 1.9.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.91.33 1.85.57 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.13.96.37 1.9.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.91.33 1.85.57 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
             </div>
             <div>
               <div class="lbl">Teléfono</div>
@@ -1560,7 +1618,7 @@
           </li>
           <li>
             <div class="ic">
-              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
             </div>
             <div>
               <div class="lbl">Correo</div>
@@ -1569,36 +1627,80 @@
           </li>
           <li>
             <div class="ic">
-              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
             </div>
             <div>
               <div class="lbl">Horario</div>
-              <div class="val">Lun a Vie: 8:00 AM – 5:00 PM · Sáb: 8:00 AM – 12:00 PM</div>
+              <div class="val">Lun–Vie: 8:00–5:00 · Sáb: 8:00–12:00</div>
             </div>
           </li>
           <li>
             <div class="ic">
-              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
             </div>
             <div>
               <div class="lbl">Dirección</div>
-              <div class="val">Av 74 CC C/C Morrice Nivel PB Of L-1 Urb Terrazas de Castillito Valencia Carabobo Zona Postal 2006</div>
+              <div class="val">Av 74 CC C/C Morrice, Nivel PB Of L-1, Urb. Terrazas de Castillito, Valencia, Carabobo</div>
             </div>
           </li>
         </ul>
-      </div>
-
-      <div class="wa-card reveal">
-        <div class="wa-icon">
-          <svg width="38" height="38" viewBox="0 0 24 24" fill="#fff"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
-        </div>
-        <h3>Escríbenos por WhatsApp</h3>
-        <p>Respuesta inmediata. Agenda tu servicio o cotiza repuestos en minutos.</p>
-        <a href="https://wa.me/584120927278?text=Hola%20Tubus%20Servicios%2C%20me%20gustar%C3%ADa%20consultar%20por%20un%20servicio" target="_blank" rel="noopener" class="wa-btn">
-          <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347"/></svg>
-          Iniciar conversación
+        <a href="https://wa.me/584120927278?text=Hola%20Tubus%20Servicios%20Carabobo%2C%20me%20gustar%C3%ADa%20consultar%20por%20un%20servicio" target="_blank" rel="noopener" class="wa-btn" style="margin-top:20px;width:100%;justify-content:center;">
+          <svg width="17" height="17" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347"/></svg>
+          WhatsApp Carabobo
         </a>
       </div>
+
+      <!-- Sede Guatire -->
+      <div class="sede-card">
+        <div class="sede-card-head">
+          <div class="sede-dot pending"></div>
+          <span class="sede-name pending">Sede Guatire</span>
+          <span class="sede-badge pending">Próximamente</span>
+        </div>
+        <ul class="contact-list">
+          <li>
+            <div class="ic">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.13.96.37 1.9.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.91.33 1.85.57 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+            </div>
+            <div>
+              <div class="lbl">Teléfono</div>
+              <div class="val" style="color:var(--text-dim)">Próximamente</div>
+            </div>
+          </li>
+          <li>
+            <div class="ic">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+            </div>
+            <div>
+              <div class="lbl">Correo</div>
+              <div class="val" style="color:var(--text-dim)">Próximamente</div>
+            </div>
+          </li>
+          <li>
+            <div class="ic">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+            </div>
+            <div>
+              <div class="lbl">Horario</div>
+              <div class="val" style="color:var(--text-dim)">Próximamente</div>
+            </div>
+          </li>
+          <li>
+            <div class="ic">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+            </div>
+            <div>
+              <div class="lbl">Dirección</div>
+              <div class="val" style="color:var(--text-dim)">Guatire, Miranda</div>
+            </div>
+          </li>
+        </ul>
+        <button class="wa-btn" disabled style="margin-top:20px;width:100%;justify-content:center;opacity:.4;cursor:not-allowed;">
+          <svg width="17" height="17" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347"/></svg>
+          WhatsApp Guatire
+        </button>
+      </div>
+
     </div>
   </div>
 </section>
@@ -1606,7 +1708,7 @@
 <!-- ========== FOOTER ========== -->
 <footer>
   <div class="container footer-inner">
-    <div>© <span id="yr"></span> Tubus Servicios · Concesionario autorizado Yutong en Carabobo.</div>
+    <div>© <span id="yr"></span> Tubus Servicios · Concesionario autorizado Yutong · Carabobo &amp; Guatire</div>
     <div class="footer-links">
       <a href="#servicios">Servicios</a>
       <a href="#nosotros">Nosotros</a>
