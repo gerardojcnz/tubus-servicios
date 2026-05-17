@@ -1254,11 +1254,11 @@
     .service-icon { width: 44px; height: 44px; margin: 0 auto 12px; border-radius: 10px; }
     .service-card h3 { font-size: 1.05rem; margin-bottom: 8px; }
     .service-card p { font-size: 0.88rem; line-height: 1.55; }
-    .why-item { text-align: left; display: flex; align-items: flex-start; gap: 16px; }
-    .why-item .icon { width: 52px; height: 52px; min-width: 52px; margin: 0; flex-shrink: 0; border-radius: 14px; }
+    .why-item { text-align: center; display: flex; flex-direction: column; align-items: center; gap: 12px; }
+    .why-item .icon { width: 52px; height: 52px; min-width: 52px; margin: 0 auto; flex-shrink: 0; border-radius: 14px; }
     .why-item h3 { font-size: 1rem; margin-bottom: 4px; }
-    .why-item p { font-size: 0.88rem; line-height: 1.5; }
-    .why-item > div:last-child { flex: 1; min-width: 0; }
+    .why-item p { font-size: 0.88rem; line-height: 1.5; max-width: 36ch; margin: 0 auto; }
+    .why-item > div:last-child { flex: unset; min-width: unset; }
 
     /* Brands */
     .brands { padding: 28px 0; }
