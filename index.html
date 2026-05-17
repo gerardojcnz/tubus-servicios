@@ -1255,9 +1255,10 @@
     .service-card h3 { font-size: 1.05rem; margin-bottom: 8px; }
     .service-card p { font-size: 0.88rem; line-height: 1.55; }
     .why-item { text-align: left; display: flex; align-items: flex-start; gap: 16px; }
-    .why-item .icon { width: 52px; height: 52px; margin: 0; flex-shrink: 0; }
-    .why-item h3 { font-size: 1rem; }
-    .why-item p { font-size: 0.88rem; }
+    .why-item .icon { width: 52px; height: 52px; min-width: 52px; margin: 0; flex-shrink: 0; border-radius: 14px; }
+    .why-item h3 { font-size: 1rem; margin-bottom: 4px; }
+    .why-item p { font-size: 0.88rem; line-height: 1.5; }
+    .why-item > div:last-child { flex: 1; min-width: 0; }
 
     /* Brands */
     .brands { padding: 28px 0; }
@@ -1557,7 +1558,7 @@
         <p>Agente oficial de Yutong en Carabobo, con respaldo directo del fabricante.</p>
       </div>
 
-      <div class="why-item featured reveal">
+      <div class="why-item reveal">
         <div class="icon">
           <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/><polyline points="9 12 11 14 15 10"/></svg>
         </div>
